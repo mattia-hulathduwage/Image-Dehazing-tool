@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Dehazing Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQd+3K7pFI6+2Df4HU+Xh4HWhp5iRnp6eix5rZKj0dEZH0zQ6RZT1nTF7QQJxY+Z7ZgSnK9ScMJ8NSIqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Image Dehazing Tool</h1>
+    <form id="uploadForm">
+        <div class="form-group">
+            <label for="imageInput"><i class="fas fa-upload"></i> Upload Image:</label>
+            <input type="file" id="imageInput" accept="image/*" aria-required="true" title="Select an image file to upload">
+        </div>
+        <button type="button" id="dehazeButton" title="Click to dehaze the uploaded image"><i class="fas fa-magic"></i> Dehaze Image</button>
+        <button type="button" id="saveButton" title="Click to save the dehazed image" disabled><i class="fas fa-save"></i> Save Image</button>
+    </form>
+    <div id="resultContainer">
+        <div class="image-container">
+            <h2>Original Image</h2>
+            <img id="originalImage" src="" alt="Original image preview">
+        </div>
+        <div class="image-container">
+            <h2>Dehazed Image</h2>
+            <img id="dehazedImage" src="" alt="Dehazed image preview">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

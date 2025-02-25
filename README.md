@@ -2,7 +2,7 @@
 
 A **web-based application** built using **Flask** that applies the **Dark Channel Prior (DCP)** method to remove haze from images. Users can upload an image, and the app will dehaze it using advanced computer vision techniques.
 
-![Alt text]([https://github.com/username/repo-name/blob/main/image.png](https://github.com/mattia-hulathduwage/Image-Dehazing-tool/blob/main/screenshot.png))
+![Alt text](https://github.com/mattia-hulathduwage/Image-Dehazing-tool/blob/main/screenshot.png?raw=true)
 
 
 ## Features  
